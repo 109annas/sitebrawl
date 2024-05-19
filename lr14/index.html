@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<title>Лабораторна робота №14</title>
+	</head>
+	  <body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!--1 Navbar Offcanvas -->
+		<nav class="navbar bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+	<!--2 Navs Tabs Underline -->
+				<ul class="nav nav-underline">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="#">Головна</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Персонажі</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Геймплей</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link disabled" aria-disabled="true">Соцмережі</a>
+					</li>
+				  </ul>
+				  <img src="media/logo.png" alt="logo" class="logo">
+	<!--off2-->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="#">Головна</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Завантажити</a>
+					</li>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Про гру
+					  </a>
+					  <ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Персонажі</a></li>
+						<li><a class="dropdown-item" href="#">Геймплей</a></li>
+						<li>
+						  <hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Актуальні поновлення!</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				  <form class="d-flex mt-3" role="search">
+					<input class="form-control me-2" type="search" placeholder="Напишіть ім'я персонажа:)" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Пошук</button>
+				  </form>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+	<!--off1-->
+	<!--3 Carousel Indicators  -->
+	<div id="carouselExampleIndicators" class="carousel slide">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="media/comandor.png" class="d-block w-100" alt="run">
+		  </div>
+		  <div class="carousel-item">
+			<img src="media/dino.jpg" class="d-block w-100" alt="water">
+		  </div>
+		  <div class="carousel-item">
+			<img src="media/magic.jpg" class="d-block w-100" alt="tiger">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div><br>
+	<!--off3-->
+	<!--4 Accordion  -->
+	<div class="accordion" id="accordionExample">
+		<div class="accordion-item">
+		  <h2 class="accordion-header">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  Персонажі
+			</button>
+		  </h2>
+		  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+			  <strong>
+				Гра швидко розвивається. У ній мультиплеєр 3 на 3 і Королівська битва. Гра створена і для мобільних пристроїв! Грайте з друзями або поодинці в різних ігрових режимах менш ніж за три хвилини. Зараз у грі є більше 70 різних
+				персонажів із унікальною атакою, супером, гаджетом чи зоряною силою!	
+	<!--5 Placeholders  -->		
+			<br><br><div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+				  <div class="card h-100">
+					<img src="media/squeak.png" class="card-img-top" alt="squeak">
+					<div class="card-body">
+					  <h5 class="card-title">СКУІК</h5>
+					  <p class="card-text">
+						Ходячий потік позитиву, що обожнює свого творця Гавса. Всі його люблять, принаймні, поки не зрозуміють, що він зроблений із собачих слинів.
+					  </p>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+					  <img src="media/spike-removebg-preview.png" class="card-img-top" id="sp" alt="spike">
+					  <div class="card-body">
+						<h5 class="card-title">СПАЙК</h5>
+						<p class="card-text">
+							Всі вважають Спайка просто милим помічником Кольта та Шеллі на ранчо, і ніхто не підозрює, який біль живе в його пораненій душі.
+						</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card h-100">
+					  <img src="media/poco-removebg-preview.png" class="card-img-top" alt="poco">
+					  <div class="card-body">
+						<h5 class="card-title">ПОКО</h5>
+						<p class="card-text">
+							Поко вірить у чудотворну силу музики і так любить свою гітару, що ні на мить не припиняє грати. Навіть коли його дуже просять.						
+						</p>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+	<!--off5-->
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			  Скіни
+			</button>
+		  </h2>
+		  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+			  <strong>
+				Скіни - це елемент гри, що змінює зовнішній вигляд бійців (іноді ефекти атаки та Супера, анімацію та голос). На даний момент у грі 608 скінів.	
+	<!--6 Cards  Image caps-->
+				<br><br><div class="card mb-3">
+					<img src="media/squeak.gif" class="card-img-top"  alt="gifspike">
+					<img src="media/spike.gif" class="card-img-top" alt="gifspike">
+					<img src="media/poco.gif" class="card-img-top" alt="gifspike">
+						<div class="card-body">
+					  <h5 class="card-title">Картопляний СКУІК, Мультяшка СПАЙК та Десперадо ПОКО</h5>
+			
+					</div>
+				  </div>
+	<!--off6-->		
+			</div>
+		  </div>
+		</div>
+		<div class="accordion-item" >
+		  <h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			Призи Стар
+			</button>
+		  </h2>
+		  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+			  <video src="media/star.mp4" controls autoplay muted class="superstar"></video><br>
+	<!--7 Modal  Static backdrop-->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					Читати більше!
+				</button>
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">ПРИЗИ СТАР</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							Призи Старр мають 7 рідкостей: рідкісний, надрідкісний, епічний, міфічний, легендарний, гіперзарядний та ранговий. Спочатку Приз рідкісний, але потім його рідкість можна покращити методом натискання на екран, на це дається 4 спроби. Чим більша рідкість, тим краща нагорода. З Призів Старр можна отримати лише одну нагороду за один із наступних: монети, подвоювачі жетонів, блінги, окуляри сили, кредити, значки, іконки, спреї, скіни, бійців, гіперзаряди, а також гаджети та Зоряні сили (якщо доступні).
+						
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+						<button type="button" class="btn btn-primary">Зрозуміло</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div></div></div>
+		   </div>
+		  </div>
+		</div>
+	  </div><br>
+	<!--off4-->
+	</body>
+</html>

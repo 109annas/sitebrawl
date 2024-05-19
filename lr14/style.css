@@ -1,0 +1,120 @@
+@media (1000px <= width <= 1950px ) {
+    .logo {
+      width: 8%;
+    }
+    .nav-item{
+      font-size: 24px;
+    }
+    .carousel.slide{
+      margin-top: 4%;
+    }
+    .card-img-top{
+      width: 80%;
+    }
+    #sp{
+      width: 80%;
+    }
+
+  }
+  @media (0px <= width <= 1000px ){
+    .logo {
+      width: 13%;
+    }
+    .nav-item{
+      font-size: 22px;
+    }
+    .carousel.slide{
+      margin-top: 10%;
+    }
+    .card-img-top{
+      width: 80%;
+    }
+  }
+  @media (0px <= width <= 768px ){
+    #sp{
+      width: 150%;
+    }
+    .card.mb-3 img{
+      width:25%;
+    }
+    .superstar{
+      width:55%;
+    }
+  }
+  @media (768px <= width <= 1000px ){
+    #sp{
+      width: 110%;
+    }
+    .card.mb-3 img{
+      width:30%;
+    }
+    .superstar{
+      width:80%;
+    }
+  }
+  @media (1000px <= width <= 1950px ){
+    #sp{
+      width: 110%;
+    }
+    .card.mb-3 img{
+      width:25%;
+    }
+    .superstar{
+      width:50%;
+    }
+  }
+body{
+    background-color: rgb(110, 203, 43);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-fluid{
+    background-color: rgb(19, 32, 178);
+    margin-bottom: -2%;
+    margin-top: -0.5%;
+}
+.nav-underline {
+  --bs-nav-underline-link-active-color: #fff;
+}
+.nav {
+  --bs-nav-link-color: #6af017;
+  --bs-nav-link-hover-color: #fff;
+  --bs-nav-link-disabled-color: rgba(67, 210, 23, 0.75);
+}
+.card.h-100{
+  display: flex;
+  align-items: center;
+}
+.accordion-item {
+  background: 
+  linear-gradient(0.25turn, rgba(100, 235, 42, 0.919),  rgba(205, 255, 219, 0.938), rgba(16, 204, 233, 0.885))
+}
+.card.mb-3 img{
+  border-radius: 10px;
+  margin-top: 1.5%;
+}
+.card.mb-3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.accordion-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.offcanvas-header{
+  background-color: #60d816;
+}
+.offcanvas-body{
+  background: 
+  linear-gradient(0.25turn,  rgba(205, 255, 219, 0.938), rgba(16, 204, 233, 0.885))
+}
+.navbar-toggler {
+  color: rgb(255 255 255 / 65%);
+}
+
+
+
+
